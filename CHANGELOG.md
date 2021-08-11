@@ -1,3 +1,10 @@
+## [8.3.7-patch-android-resizing](https://github.com/jls-ch/react-native-fast-image/compare/v8.3.7...v8.3.7-patch-android-resizing) (2021-08-11)
+
+
+## Changes
+
+Integrated open [PR](https://github.com/DylanVann/react-native-fast-image/pull/401/files) for Android resizing into latest version
+
 ## [8.3.7](https://github.com/DylanVann/react-native-fast-image/compare/v8.3.6...v8.3.7) (2021-07-24)
 
 ## [8.3.6](https://github.com/DylanVann/react-native-fast-image/compare/v8.3.5...v8.3.6) (2021-07-08)

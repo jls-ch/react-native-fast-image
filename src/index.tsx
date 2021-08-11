@@ -50,6 +50,11 @@ export type Source = {
     cache?: Cache
 }
 
+export type ResizeImageAndroid = {
+    width: number,
+    height: number,
+}
+
 export interface OnLoadEvent {
     nativeEvent: {
         width: number
@@ -83,6 +88,7 @@ export interface FastImageProps extends AccessibilityProps {
     source: Source | number
     resizeMode?: ResizeMode
     fallback?: boolean
+    resizeImageAndroid?: ResizeImageAndroid
 
     onLoadStart?(): void
 
@@ -141,6 +147,7 @@ function FastImageBase({
     children,
     // eslint-disable-next-line no-shadow
     resizeMode = 'cover',
+    resizeImageAndroid,
     forwardedRef,
     ...props
 }: FastImageProps & { forwardedRef: React.Ref<any> }) {
@@ -182,6 +189,7 @@ function FastImageBase({
                 onFastImageError={onError}
                 onFastImageLoadEnd={onLoadEnd}
                 resizeMode={resizeMode}
+                resizeImageAndroid={resizeImageAndroid}
             />
             {children}
         </View>
